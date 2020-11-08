@@ -1,8 +1,9 @@
-﻿namespace Asteroids
+﻿using UnityEngine;
+
+namespace Asteroids
 {
-    public interface IMove
+    public interface IMover
     {
-        float Speed { get; }
         void Move(float horizontal, float vertical, float deltaTime);
     }
 }
